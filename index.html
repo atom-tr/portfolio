@@ -1,1 +1,64 @@
-Hello world!
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>atomtr - Portfolio</title>
+	<meta name="description" content="">
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="img/favicon.webp">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/pico/pico.min.css">
+	<link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+	<div id="fake" onclick="realme()">
+		Hello world!
+	</div>
+	<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+	<main id="main" class="y-mandatory">
+		<section class="ele bgjar-1">
+			<div class="container">
+				<h1><small>Hi There,</small><br>I'm <b>atomtr</b></h1>
+				<p>This is a Hello world page.</p>
+			</div>
+		</section>
+		<section class="ele bgjar-2">
+			<div class="container">
+				<p>This is a another hello world page.</p>
+			</div>
+		</section>
+	</main>
+
+	<script>
+
+		const f = document.getElementById('fake');
+		const m = document.getElementById('main');
+		window.onload = function () {
+			// sessionStorage .setItem('test', 'test');
+			let fake = localStorage.getItem("fake");
+			if (fake === null) {
+				f.style.display = 'block';
+				m.style.display = 'none';
+			} else {
+				f.style.display = 'none';
+				m.style.display = 'block';
+			}
+		}
+		function realme() {
+			f.style.display = 'none';
+			m.style.display = 'block';
+			localStorage.setItem("fake", 0);
+		}
+	</script>
+</body>
+
+</html>
