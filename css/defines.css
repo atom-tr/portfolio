@@ -1,4 +1,4 @@
-:root {
+:root, ::after, ::before {
   --mineral-green: #405954;
   --lochinvar: #508A7A;
   --horizon: #C4D4D1;
@@ -12,4 +12,17 @@
   --mandy: #E84A5F;
   --salmon: #FF847C;
   --apricot: #FECEAB:
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root, ::after, ::before {
+    --color: #F5F5F5;
+    --background-color: #2f3e46;
+  }
+}
+@media only screen and (prefers-color-scheme: light) {
+  :root, ::after, ::before {
+    --color: #2f3e46;
+    --background-color: #F5F5F5;
+  }
 }

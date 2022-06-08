@@ -21,7 +21,12 @@ html, body {
 body>main {
 	padding: 0;
 }
-
+.mt-0 {
+    margin-top: 0;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
 .y-mandatory {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -38,4 +43,8 @@ body>main {
     flex-direction: column;
     -webkit-box-pack: center;
     justify-content: center;
+}
+.social {
+    display: flex;
+    align-items: center;
 }
