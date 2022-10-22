@@ -18,7 +18,8 @@ b {
 	position: relative;
 }
 
-[class^="i-"]:after, b::before {
+/* [class^="i-"]:after,  */
+:is(b)::before {
 	transform-origin: right;
 	transform: scaleX(0);
 	transition: transform .3s ease-in-out;
@@ -28,11 +29,12 @@ b {
 	min-height: 0.1em;
 	border-radius: 0.1em;
 	background-color: var(--copperfield);
-	bottom: -4px;
+	bottom: -0.2rem;
 	left: 0;
 }
 
-[class^="i-"]:hover::after, b:hover::before {
+/* [class^="i-"]:hover::after,  */
+:is(b):hover::before {
 	transform-origin: left;
 	transform: scaleX(1);
 }
@@ -63,4 +65,11 @@ b {
 .i-instagram::before {
 	-webkit-mask: var(--instagram);
 	mask: var(--instagram);
+}
+
+.social svg {
+	height: 1rem;
+	width: auto;
+	padding-right: 0.4rem;
+	vertical-align:middle;
 }

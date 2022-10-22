@@ -14,55 +14,182 @@
 	<link rel="icon" type="image/png" href="img/favicon.webp">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/pico/pico.min.css">
+	<link href="css/css-cli.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/icon.css">
 </head>
 
 <body>
-	<div id="fake" onclick="realme()">
-		Hello world!
-	</div>
-	<!--[if lt IE 7]>
-			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-	<main id="main" class="y-mandatory">
-		<section class="ele bgjar-1">
-			<div class="container">
-				<h1><small>Hi There,</small><br>I'm <b>atomtr</b></h1>
-				<p>This is a Hello world page.</p>
-				<h3 class="social mt-0">
-					<a class="i-github" href="https://github.com/atom-tr"></a>
-					<a class="i-instagram" href="https://instagram.com/anton.thai"></a>
-				</h3>
-			</div>
+	<header>
+		<h1 id="terminal-head">atomtr - Portfolio</h1>
+	</header>
+	<main>
+		<section class="console reveal" title="About">
+			<h2 title=".about"></h2>
+			<p>
+				Hi there <img
+					src="https://camo.githubusercontent.com/e8e7b06ecf583bc040eb60e44eb5b8e0ecc5421320a92929ce21522dbc34c891/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966"
+					data-canonical-src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
+					style="max-width: 100%; display: inline-block; width: 1.5rem"
+					data-target="animated-image.originalImage">, <b>atom.tr</b> here.
+			</p>
+			<small>
+				<p>&emsp;🏢 I am currently working as a <strong>System Administrator</strong> at <a
+						href="https://netnam.com/" rel="nofollow">NetNam Corporation</a></p>
+				<p>&emsp;🎓 Studies for Network Engineering at <a href="https://ptithcm.edu.vn/" rel="nofollow">Posts
+						and Telecommunications Institute of Technology</a></p>
+				<p>&emsp;🏡 'Lives in <strong>Ho Chi Minh</strong> city</p>
+			</small>
+			<br>
+			<h2 title=".social | render-image"></h2>
+			<p class="social">&emsp;
+				<a href="https://github.com/atom-tr">
+					<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<title>GitHub</title>
+						<path
+							d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+					</svg>Github</a>
+				<a href="https://instagram.com/iaht.mota"><svg role="img" viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<title>Instagram</title>
+						<path
+							d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+					</svg>Instagram</a>
+				<a href="https://dev.to/atomtr"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<title>dev.to</title>
+						<path
+							d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.3zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.66-2.52.74-.04c.4-.02.73 0 .73.04 0 .14-1.67 6.38-1.8 6.68z" />
+					</svg>dev.to</a>
+			</p>
 		</section>
-		<section class="ele bgjar-2">
-			<div class="container">
-				<p>This is a another hello world page.</p>
+		<section class="console reveal" title="Works">
+			<h2 title=".github/stats | render-image"></h2>
+			<div dir="auto" class="flex">
+				<a href="https://github.com/atom-tr/">
+					<img align="top"
+						src="https://raw.githubusercontent.com/atom-tr/atom-tr/master/profile-summary-card-output/github_dark/0-profile-details.svg"
+						style="width: 100%; max-width: 100%;">
+				</a>
+				<a href="https://github.com/atom-tr/">
+					<img align="top"
+						src="https://camo.githubusercontent.com/13c71f62bf44254f49da57fba9c370e2dfb0ea7c5650f3fad88a50ebf393b57b/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d61746f6d2d7472266c61796f75743d636f6d70616374267468656d653d6461726b26626f726465725f636f6c6f723d3235324433332662675f636f6c6f723d30423046313526636f756e745f707269766174653d31"
+						style="width: 100%; max-width: 100%;"
+						data-canonical-src="https://github-readme-stats.vercel.app/api/top-langs/?username=atom-tr&amp;layout=compact&amp;theme=dark&amp;border_color=252D33&amp;bg_color=0B0F15&amp;count_private=1">
+				</a>
 			</div>
+			<br>
+			<h2 title=".skills"></h2>
+			<p dir="auto">&ensp;Here's the languages that I am currently working on:</p>
+			<p dir="auto">&ensp;<img
+					src="https://camo.githubusercontent.com/94be0a2e5be142925615e5821d97137a930d08fc154962ce43860f1957e6661e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d3337373641423f7374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465"
+					alt=""
+					data-canonical-src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white"
+					style="max-width: 100%;">&ensp;<img
+					src="https://camo.githubusercontent.com/204cffb536b7cc929100c3a0ed11778325a4b1733ee2b6c7e7a613aadf11e756/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f426173682d3445414132353f7374796c653d666f722d7468652d6261646765266c6f676f3d676e7562617368266c6f676f436f6c6f723d7768697465"
+					alt=""
+					data-canonical-src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&amp;logo=gnubash&amp;logoColor=white"
+					style="max-width: 100%;">&ensp;<img
+					src="https://camo.githubusercontent.com/704667362a7ad06f348c2ec553d8891df38885304e8a51f62d19755f686163ff/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d7953514c2d3434373941313f7374796c653d666f722d7468652d6261646765266c6f676f3d6d7973716c266c6f676f436f6c6f723d7768697465"
+					alt=""
+					data-canonical-src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&amp;logo=mysql&amp;logoColor=white"
+					style="max-width: 100%;">&ensp;<img
+					src="https://camo.githubusercontent.com/510a057988cb5216f5d297ee202f6a08fa179798926cea28e95910f6b8ca5535/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d61726b646f776e2d3030303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d6d61726b646f776e266c6f676f436f6c6f723d7768697465"
+					alt=""
+					data-canonical-src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&amp;logo=markdown&amp;logoColor=white"
+					style="max-width: 100%;">&ensp;<img
+					src="https://camo.githubusercontent.com/9d07c04bdd98c662d5df9d4e1cc1de8446ffeaebca330feb161f1fb8e1188204/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d4637444631453f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d626c61636b"
+					alt=""
+					data-canonical-src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black"
+					style="max-width: 100%;">&ensp;<img
+					src="https://camo.githubusercontent.com/d63d473e728e20a286d22bb2226a7bf45a2b9ac6c72c59c0e61e9730bfe4168c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f48544d4c352d4533344632363f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465"
+					alt=""
+					data-canonical-src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
+					style="max-width: 100%;">&ensp;<img
+					src="https://camo.githubusercontent.com/3a0f693cfa032ea4404e8e02d485599bd0d192282b921026e89d271aaa3d7565/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f435353332d3135373242363f7374796c653d666f722d7468652d6261646765266c6f676f3d63737333266c6f676f436f6c6f723d7768697465"
+					alt=""
+					data-canonical-src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
+					style="max-width: 100%;"></p>
+			<br>
+			<p dir="auto">&ensp;Some of the technologies I have worked with:</p>
+			<p dir="auto">&ensp;<img
+					src="https://camo.githubusercontent.com/bd2bd127c104ba5c98bb12c70801b075aee1f040009089510f69554300e7ff41/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769742d4630353033323f7374796c653d666f722d7468652d6261646765266c6f676f3d676974266c6f676f436f6c6f723d7768697465"
+					alt=""
+					data-canonical-src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&amp;logo=git&amp;logoColor=white"
+					style="max-width: 100%;">&ensp;<img
+					src="https://camo.githubusercontent.com/4d74b36962a1b06aed5f035f2f95f131059b2b551c7e6d81630f7df7831b9f80/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446a616e676f2d3039324532303f7374796c653d666f722d7468652d6261646765266c6f676f3d646a616e676f266c6f676f436f6c6f723d7768697465"
+					alt=""
+					data-canonical-src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&amp;logo=django&amp;logoColor=white"
+					style="max-width: 100%;">&ensp;<img
+					src="https://camo.githubusercontent.com/b54d2e6bf5f15ddf3dd884b7d1bf21c7d5cc8798d119d74a6538c1a1b583a49b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f636b65722d3234393645443f7374796c653d666f722d7468652d6261646765266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465"
+					alt=""
+					data-canonical-src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white"
+					style="max-width: 100%;">&ensp;<img
+					src="https://camo.githubusercontent.com/fcc60c297862de0065eea77e3073ee60b085a24dbce0b4a7a683e932516d8b3d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f426f6f7473747261702d3739353242333f7374796c653d666f722d7468652d6261646765266c6f676f3d426f6f747374726170266c6f676f436f6c6f723d7768697465"
+					alt=""
+					data-canonical-src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&amp;logo=Bootstrap&amp;logoColor=white"
+					style="max-width: 100%;"></p>
+		</section>
+		<hr>
+		<section id="contact">
+			<br>
+			<p align="center" dir="auto">
+				<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c617e2993ed99cbeca6fa736905b482aea17a59f8dec53872c148ed864fcccad/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d61746f6d2d747226636f6c6f723d627269676874677265656e"><img src="https://camo.githubusercontent.com/c617e2993ed99cbeca6fa736905b482aea17a59f8dec53872c148ed864fcccad/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d61746f6d2d747226636f6c6f723d627269676874677265656e" alt="watching_count" data-canonical-src="https://komarev.com/ghpvc/?username=atom-tr&amp;color=brightgreen" style="max-width: 100%;"></a>
+				<a href="https://github.com/atom-tr/"><img src="https://camo.githubusercontent.com/18398f2eec83df066d502c6640d0072dc6c6ace4b53168988221a0dbb6631e7e/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f6c6c6f776572732f61746f6d2d74723f7374796c653d666c61742d7371756172653f636f6c6f723d253233344343363145266c6162656c3d476974487562253230466f6c6c6f77657273253230" data-canonical-src="https://img.shields.io/github/followers/atom-tr?style=flat-square?color=%234CC61E&amp;label=GitHub%20Followers%20" style="max-width: 100%;"></a>
+				<a href="https://github.com/atom-tr/"><img src="https://camo.githubusercontent.com/89a8ebb0a4ff6b0ca0b24c26d5eed34ffc27c5497193787918ae99b4f4e115db/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6173742d636f6d6d69742f61746f6d2d74722f61746f6d2d74723f7374796c653d666c61742d7371756172653f636f6c6f723d726564266c6162656c3d4c61737425323055706461746564253230" data-canonical-src="https://img.shields.io/github/last-commit/atom-tr/atom-tr?style=flat-square?color=red&amp;label=Last%20Updated%20" style="max-width: 100%;"></a>
+			  </p>
+			  <br>
+			  <p align="center" dir="auto">
+				<i>“If you want to learn to swim jump into the water. On dry land no frame of mind is ever going to help you.”</i>
+				<br>― Bruce Lee
+				</p>
+				<hr>
 		</section>
 	</main>
-
 	<script>
+		// get all sections in the page and add onscroll event
+		const sections = document.querySelectorAll('section');
+		window.onscroll = function () {
+			// get the current vertical position of the scroll bar
+			const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+			// iterate through sections to get height, top and ID values
+			for (const section of sections) {
+				const sectionHeight = section.offsetHeight;
+				const sectionTop = section.offsetTop - 50;
+				sectionId = section.getAttribute('id');
+				// if the user has scrolled over the top of the section
+				// change the URL to include the section ID
+				if (scrollPosition >= sectionTop && scrollPosition < (sectionTop + sectionHeight)) {
+					window.location.hash = sectionId;
+					// if the section is at the top of the page and hass title
+					// set (header > h1) text to the title
+					if (scrollPosition === sectionTop && section.hasAttribute('title')) {
+						document.querySelector('header > h1').innerHTML = "atomtr - " + section.getAttribute('title');
+					}
+				} else if (scrollPosition < 500) {
+					// if the user has scrolled back to the top of the page
+					// remove the hash from the URL
+					window.location.hash = '';
+				}
+			}
+		};
 
-		const f = document.getElementById('fake');
-		const m = document.getElementById('main');
-		window.onload = function () {
-			// sessionStorage .setItem('test', 'test');
-			let fake = localStorage.getItem("fake");
-			if (fake === null) {
-				f.style.display = 'block';
-				m.style.display = 'none';
-			} else {
-				f.style.display = 'none';
-				m.style.display = 'block';
+		function reveal() {
+			var reveals = document.querySelectorAll(".reveal");
+
+			for (var i = 0; i < reveals.length; i++) {
+				var windowHeight = window.innerHeight;
+				var elementTop = reveals[i].getBoundingClientRect().top;
+				var elementVisible = 150;
+
+				if (elementTop < windowHeight - elementVisible) {
+					reveals[i].classList.add("active");
+				} else {
+					reveals[i].classList.remove("active");
+				}
 			}
 		}
-		function realme() {
-			f.style.display = 'none';
-			m.style.display = 'block';
-			localStorage.setItem("fake", 0);
-		}
+
+		window.addEventListener("scroll", reveal);
 	</script>
 </body>
 
