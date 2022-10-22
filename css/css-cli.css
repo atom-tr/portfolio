@@ -271,7 +271,7 @@ main .container > * + *:not(blockquote),
 
 /* :is(header, .console) */
 :is(header, .console) p::before {
-  content: "‣ ";
+  content: "‣  ";
   display: inline-block;
   color: var(--color-highlight);
 }
