@@ -20,28 +20,17 @@
 	<link rel="stylesheet" href="css/icon.css">
 </head>
 
-<body>
+<body onload="startTime()">
 	<header>
 		<h1 id="terminal-head">atomtr - Portfolio</h1>
 		<code style="min-width: 100%;">
 			<strong>Welcome to my portfolio</strong>
 			<br>
-			<span>* Current time is: <b><script type="text/javascript">document.write(Date().toLocaleString());</script></b></span>
+			<span>* Current time is: <b id="clock"></b></span>
 			<br>
-			<span>* Uptime: <b>
-				<script type="text/javascript">
-					var seconds = Math.floor((new Date() - new Date("1996-12-19")) / 1000);
-					var minutes = Math.floor(seconds / 60);
-					var hours = Math.floor(minutes / 60);
-					var days = Math.floor(hours / 24);
-					var years = Math.floor(days / 365);
-					seconds %= 60;
-					minutes %= 60;
-					hours %= 24;
-					days %= 365;
-					document.write(years + " years, " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds");
-				</script>
-			</b></span>
+			<span>* Uptime: <b id="uptime"></b></span>
+			<br>
+			<span>* System language: <b>vietnames</b></span>
 		</code>
 		<hr>
 	</header>
@@ -167,6 +156,24 @@
 				<hr>
 		</section>
 	</main>
+	<script type="text/javascript">
+		function startTime() {
+			const today = Date().toLocaleString();
+			document.getElementById('clock').innerHTML =  today;
+			
+			var seconds = Math.floor((new Date() - new Date("1996-12-19")) / 1000);
+			var minutes = Math.floor(seconds / 60);
+			var hours = Math.floor(minutes / 60);
+			var days = Math.floor(hours / 24);
+			var years = Math.floor(days / 365);
+			seconds %= 60;
+			minutes %= 60;
+			hours %= 24;
+			days %= 365;
+			document.getElementById('uptime').innerHTML =  years + " years, " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+			setTimeout(startTime, 500);
+		  }
+	</script>
 	<script>
 		// get all sections in the page and add onscroll event
 		const sections = document.querySelectorAll('section');
