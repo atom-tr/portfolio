@@ -26,9 +26,9 @@ b {
 	content: '';
 	position: absolute;
 	width: 100%;
-	min-height: 0.1em;
-	border-radius: 0.1em;
-	background-color: var(--copperfield);
+	min-height: 0.1rem;
+	border-radius: 0.1rem;
+	background-color: var(--code-tag-color);
 	bottom: -0.2rem;
 	left: 0;
 }
@@ -36,7 +36,7 @@ b {
 /* [class^="i-"]:hover::after,  */
 :is(b):hover::before {
 	transform-origin: left;
-	transform: scaleX(1);
+	transform: scaleX(0.99);
 }
 
 [class^="i-"] {
@@ -72,4 +72,13 @@ b {
 	width: auto;
 	padding-right: 0.4rem;
 	vertical-align:middle;
+}
+.repo-language-color {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color-primer-border-contrast);
+    border-radius: 50%;
 }

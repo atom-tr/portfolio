@@ -43,7 +43,7 @@
 
   --space-xxs: 0.125rem;
   --space-xs: 0.5rem;
-  --space-sm: 0.75rem;
+  --space-sm: 0.55rem;
   --space-base: 1rem;
   --space-md: 1.25rem;
   --space-lg: 2rem;
@@ -61,7 +61,7 @@ html {
   overflow: hidden;
   height: 100%;
   padding: var(--space-body);
-  background-color: var(--color-background);
+  background-color: var(--color-background) !important;
 }
 
 body {
@@ -141,14 +141,14 @@ p {
   margin: unset;
 }
 
+h2 {
+  margin-bottom: var(--space-sm);
+}
 ul {
   list-style-type: none;
   padding-left: unset;
 }
 
-ol li + li {
-  margin-top: var(--space-sm);
-}
 
 svg {
   fill: currentcolor;
@@ -268,12 +268,14 @@ main .container > * + *:not(blockquote),
 .page-footer .container > * + * {
   margin-top: var(--space-lg);
 }
-
-/* :is(header, .console) */
 :is(header, .console) p::before {
   content: "‣  ";
   display: inline-block;
   color: var(--color-highlight);
+}
+/* :is(header, .console) */
+:is(.Box) p::before {
+  content: none;
 }
 
 :is(header, .console) .link-github {
