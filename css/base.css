@@ -7,12 +7,12 @@
 }
 * {
     box-sizing: inherit;
-    /* -webkit-transition-property: all; */
-    /* transition-property: all; */
-    /* -webkit-transition-duration: .6s; */
-    /* transition-duration: .6s; */
-    /* -webkit-transition-timing-function: ease; */
-    /* transition-timing-function: ease; */
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .6s;
+    transition-duration: .6s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
 }
 
 html, body {
@@ -76,13 +76,14 @@ code b {
     justify-content: center;
 }
 .social {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
 }
 .social a {
     margin: 0 0.5em;
     display: inline;
     color: aliceblue;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 .social a:hover {
     text-decoration: none;

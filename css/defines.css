@@ -73,7 +73,8 @@ section {
 body > main,
 body > footer,
 section {
-    --block-spacing-vertical: calc(var(--spacing) * 4);
+    --block-spacing-vertical:
+    calc(var(--spacing) * 4);
   }
 }
 
