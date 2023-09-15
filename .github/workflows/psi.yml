@@ -6,12 +6,12 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
+    - name: Checkout
+      uses: actions/checkout@v1
     - name: Running Page Speed Insights
-    - id: psi
-      uses: stefafafan/psi-action@v1
+      id: psi
+      uses: jakepartusch/psi-action@v1.3
       with:
           url: 'https://atomtr.link/'
           key: ${{ secrets.PSI_API_KEY }}
-          strategy: 'desktop'
-    - name: echo score
-      run: echo "Score: ${{ steps.psi.outputs.score }}"
+          strategy: desktop
