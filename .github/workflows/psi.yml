@@ -6,11 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Running Page Speed Insights
         id: psi
         uses: jakepartusch/psi-action@v1.3
         with:
             url: 'https://atomtr.link/'
+            threshold: 30
             key: ${{ secrets.PSI_API_KEY }}
             strategy: desktop
