@@ -1,0 +1,10 @@
+steps:
+  - name: Running Page Speed Insights
+  - id: psi
+    uses: stefafafan/psi-action@v1
+    with:
+        url: 'https://atomtr.link/'
+        key: ${{ secrets.PSI_API_KEY }}
+        strategy: 'desktop'
+  - name: echo score
+    run: echo "Score: ${{ steps.psi.outputs.score }}"
