@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>atomtr</title>
+
+
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="shortcut icon" href="http://localhost:2368/content/images/size/w256h256/format/png/2024/10/favicon.webp">
+
+
+<link href="/assets/dist/style.min.css?v=e5d5ed9ead" type="text/css" rel="stylesheet">
+<link href="/assets/dist/plugins.min.css?v=e5d5ed9ead" type="text/css" rel="preload" as="style" onload="this.rel='stylesheet'">
+<link href="/assets/dist/atomtr.webflow.29fce4360.css?v=e5d5ed9ead" type="text/css" rel="stylesheet">
+
+
+<style>
+    /* merriweather-regular - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/assets/fonts/merriweather-v30-latin-regular.woff2?v=e5d5ed9ead) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* merriweather-italic - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Merriweather';
+        font-style: italic;
+        font-weight: 400;
+        src: url(/assets/fonts/merriweather-v30-latin-italic.woff2?v=e5d5ed9ead) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* merriweather-700 - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+        src: url(/assets/fonts/merriweather-v30-latin-700.woff2?v=e5d5ed9ead) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* merriweather-700italic - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Merriweather';
+        font-style: italic;
+        font-weight: 700;
+        src: url(/assets/fonts/merriweather-v30-latin-700italic.woff2?v=e5d5ed9ead) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* merriweather-900 - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 900;
+        src: url(/assets/fonts/merriweather-v30-latin-900.woff2?v=e5d5ed9ead) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+</style>
+
+
+<style>
+    :root{
+            --epcl-background-color: #FAF2EA;
+            --epcl-border-color: #524D4E;
+            --epcl-secondary-color: #FDFBF9;
+    }
+    body.disable-grayscale .grayscale-effect img{
+        -webkit-filter: none;
+        filter: none;
+    }
+</style>
+
+<script>
+	// Theme Config, check the documentation before edit this file
+    var site_url = 'http://localhost:2368';
+	var theme_config = {
+		masonry: 'on', // If you don't need masonry style, just set to "off"
+	};  
+</script>
+    <meta name="description" content="Thoughts, stories and ideas.">
+    <link rel="icon" href="http://localhost:2368/content/images/size/w256h256/format/png/2024/10/favicon.webp" type="image/png">
+    <link rel="canonical" href="http://localhost:2368/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="atomtr">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="atomtr">
+    <meta property="og:description" content="Thoughts, stories and ideas.">
+    <meta property="og:url" content="http://localhost:2368/">
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="atomtr">
+    <meta name="twitter:description" content="Thoughts, stories and ideas.">
+    <meta name="twitter:url" content="http://localhost:2368/">
+    <meta name="twitter:site" content="@ghost">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "atomtr",
+        "url": "http://localhost:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/size/w256h256/format/png/2024/10/favicon.webp",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "url": "http://localhost:2368/",
+    "mainEntityOfPage": "http://localhost:2368/",
+    "description": "Thoughts, stories and ideas."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.96">
+    <link rel="alternate" type="application/rss+xml" title="atomtr" href="http://localhost:2368/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.3/umd/sodo-search.min.js" data-key="cdee128ec2a55885a064db409d" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.3/umd/main.css" data-sodo-search="http://localhost:2368/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="http://localhost:2368/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=e5d5ed9ead"></script><style>:root {--ghost-accent-color: #1c1a1a;}</style>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=e5d5ed9ead">
+
+</head>
+
+<body class=" home-template" >
+
+    <div class="cursor-wrapper hide-tablet blend-mode-difference">
+        <div class="node" id="node"></div>
+        <div class="cursor" id="cursor"></div>
+    </div>
+
+    <img loading="eager" fetchpriority="high" src="/assets/images/svg-icons.svg?v=e5d5ed9ead" alt="Social Icons"
+        style="display:none;">
+
+    <!-- start: .mobile.main-nav -->
+    <nav class="mobile main-nav">
+        <div class="close"><svg class="icon">
+                <use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#close-icon"></use>
+            </svg></div>
+            <div class="logo text-logo">
+        <a href="http://localhost:2368" class="title bold black no-margin"><span>atomtr</span></a>
+    </div>
+            <ul class="menu underline-effect">
+            <li class=" nav-home current-menu-item"><a href="http://localhost:2368/">Home</a></li>
+            <li class=" nav-about"><a href="http://localhost:2368/about/">About</a></li>
+    </ul>
+
+
+    </nav>
+    <!-- end: .mobile.main-nav -->
+    <div class="menu-overlay"></div>
+
+    <!-- start: #wrapper -->
+    <div id="wrapper">
+
+        <!-- start: #header -->
+<header id="header" class="classic">
+
+	<div class="menu-mobile">
+        <svg class="icon ularge open"><use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#menu-icon"></use></svg>
+        <svg class="icon ularge close"><use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#close-icon"></use></svg>
+    </div>
+
+    <span data-ghost-search class="epcl-search-button hide-on-desktop-lg"><svg class="icon ularge"><use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#search-icon"></use></svg></span>
+
+	<!-- start: .menu-wrapper -->
+	<div class="menu-wrapper">
+
+        <div class="top underline-effect hide-on-mobile hide-on-tablet hide-on-desktop-sm">    
+            <div class="grid-container">
+                    <div class="stack-nav">  
+                            <div class="logo text-logo">
+        <a href="http://localhost:2368" class="title bold black no-margin"><span>atomtr</span></a>
+    </div>
+                            <ul class="menu underline-effect">
+            <li class=" nav-home current-menu-item"><a href="http://localhost:2368/">Home</a></li>
+            <li class=" nav-about"><a href="http://localhost:2368/about/">About</a></li>
+    </ul>
+
+  
+                    </div>
+                <div>
+                    <span data-ghost-search class="epcl-search-button"><svg class="icon large"><use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#search-icon"></use></svg></span>
+                </div>
+            </div>
+        </div>
+		
+	</div>
+	<!-- end: .menu-wrapper -->
+	
+	<div class="clear"></div>
+
+</header>
+<!-- end: #header -->
+         <style>
+    .node.expand::before {
+        background-size: cover;
+        background-position: center;
+        background-color: #ffffff;
+        background-image: url(/content/images/2024/10/66f91b40fd2ca9b6ddf129a5_IMG_5895-Photoroom.webp);
+        filter: invert(100%);
+        opacity: 1;
+    }
+    </style>
+    <main id="home" class="main">
+
+        <!-- start: .content-wrapper -->
+        <div class="content-wrapper">
+            <section id="top" class="section grid-container nodeHover">
+                <div class="header-component">
+                    <div class="header-text-wrapper">
+                        <div class="margin-bottom margin-small">
+                            <h6 class="heading-4">Python Developer &amp; DevOps Engineer</h6>
+                        </div>
+                        <div class="max-width-large">
+                            <h1>Turning your www into wow</h1>
+                        </div>
+                    </div>
+                    <picture>
+                        <source srcset="/content/images/2024/10/66f91b40fd2ca9b6ddf129a5_IMG_5895-Photoroom.webp 300w, /content/images/2024/10/66f91b40fd2ca9b6ddf129a5_IMG_5895-Photoroom.webp 600w"
+                            sizes="(min-width: 600px) 600px, 92vw" type="image/webp">
+                        <img srcset="/content/images/2024/10/66f91b40fd2ca9b6ddf129a5_IMG_5895-Photoroom.webp 300w, /content/images/2024/10/66f91b40fd2ca9b6ddf129a5_IMG_5895-Photoroom.webp 600w" sizes="(min-width: 600px) 600px, 92vw"
+                            src="/content/images/2024/10/66f91b40fd2ca9b6ddf129a5_IMG_5895-Photoroom.webp" loading="lazy" alt=""
+                            class="profile-pic">
+                    </picture>
+                    <a href="#introduction" class="button-down w-inline-block"><img
+                            src="https://cdn.prod.website-files.com/66f80c0f418ca91d08b88614/66f80c0f418ca91d08b8866a_arrow-down.svg"
+                            loading="lazy"
+                            alt="Icon of an arrow pointing down. By clicking it you scroll to the next section."
+                            class="arrow-down-icon">
+                        <div class="button-fill"
+                            style="display: none; transform: translate3d(0px, -12rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            <img src="https://cdn.prod.website-files.com/66f80c0f418ca91d08b88614/66f80c0f418ca91d08b8866a_arrow-down.svg"
+                                loading="lazy"
+                                alt="Icon of an arrow pointing down. By clicking it you scroll to the next section."
+                                class="arrow-down-icon">
+                        </div>
+                    </a>
+                </div>
+            </section>
+             <hr>
+            <section id="introduction" class="section grid-container">
+                <div>
+                <h2 class="title bold black no-margin">atomtr</h2>
+                <div class="text-wrapper">
+                    <div class="max-width-large">
+                        <h2 class="heading-5">A developer or DevOps engineer with a passion for automating everything.
+                        </h2>
+                    </div>
+                    <div class="max-width-small">
+                        <p class="paragraph">Started as a System Administrator, optimizing workflows and
+                            developing tools across departments. Promoted to lead the newly-formed DevOps team
+                            due to increased demand and proven results</p>
+                        <div class="margin-top margin-small"><a href="#services" class="text-button w-inline-block epcl-button">
+                                <div class="text-weight-semibold text-size-medium">Check out <svg width="16" height="14" viewBox="0 0 16 14"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_366_105)">
+                                            <path
+                                                d="M16 6.99176C16.0007 7.2482 15.9033 7.50449 15.709 7.69869V7.70868L9.71335 13.7002C9.32364 14.0996 8.6941 14.0996 8.29439 13.7002C7.90468 13.3107 7.90468 12.6816 8.29439 12.2822L12.5915 7.98802L0.999268 7.98802C0.449671 7.98802 -4.88873e-08 7.54864 0 6.98944C4.80143e-08 6.44022 0.449671 5.99086 0.999269 5.99086L12.5718 5.99086L8.28653 1.70857C7.89682 1.32911 7.89682 0.69002 8.28653 0.300573H8.29653C8.48639 0.120829 8.7462 0.0109844 9.00601 0.0109844L8.99502 0C9.26482 2.35868e-08 9.52463 0.109845 9.7045 0.28959L15.7001 6.28108C15.7122 6.29315 15.7239 6.30544 15.7353 6.31793C15.9058 6.50208 15.9937 6.73472 15.9997 6.96877C15.9999 6.97643 16 6.98409 16 6.99176Z"
+                                                fill="currentColor"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_366_105">
+                                                <rect width="16" height="13.9997" fill="currentColor"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg></div>
+                            </a></div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section id="work" class="section-work grid-container">
+                
+<div class="padding-top padding-xhuge">
+    <div class="margin-bottom margin-large">
+        <h3 class="heading-style-h6">recent work</h3>
+    </div>
+</div>
+<div class="articles w-layout-grid work-grid" data-aos="fade-up">
+            <div class="card bg-black" style='--page-feature-image: url(/content/images/size/w550/2024/10/mockuper_nwt.png)'>
+                <div>
+                    <h3 class="text-color-white">NET.Webtools</h3>
+                    <div class="margin-top margin-small">
+                        <div class="max-width-xsmall">
+                            <p class="text-color-white">Designed a web tool for the network team to automate tasks and scheduling</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="tag-wrapper">
+                   
+                        <a href="/tag/full-stack/" title="Full Stack" class="tag-component epcl-button">Full Stack</a>
+                   
+                        <a href="/tag/design/" title="Design" class="tag-component epcl-button">Design</a>
+                   
+                        <a href="/tag/devops/" title="DevOps" class="tag-component epcl-button">DevOps</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-black" style='--page-feature-image: url()'>
+                <div>
+                    <h3 class="text-color-white">Digipost API</h3>
+                    <div class="margin-top margin-small">
+                        <div class="max-width-xsmall">
+                            <p class="text-color-white">Developed REST API for the company’s existing Digipost service</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="tag-wrapper">
+                   
+                        <a href="/tag/system-architect/" title="System Architect" class="tag-component epcl-button">System Architect</a>
+                   
+                        <a href="/tag/backend/" title="Backend" class="tag-component epcl-button">Backend</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-black" style='--page-feature-image: url()'>
+                <div>
+                    <h3 class="text-color-white">PDNSAdmin</h3>
+                    <div class="margin-top margin-small">
+                        <div class="max-width-xsmall">
+                            <p class="text-color-white">Customized to enhance functionality and better meet user needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="tag-wrapper">
+                   
+                        <a href="/tag/devops/" title="DevOps" class="tag-component epcl-button">DevOps</a>
+                   
+                        <a href="/tag/backend/" title="Backend" class="tag-component epcl-button">Backend</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-black" style='--page-feature-image: url()'>
+                <div>
+                    <h3 class="text-color-white">HSIA - v2</h3>
+                    <div class="margin-top margin-small">
+                        <div class="max-width-xsmall">
+                            <p class="text-color-white">Upgraded code for the HSIA service software to integrate new systems and add new features.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="tag-wrapper">
+                   
+                        <a href="/tag/full-stack/" title="Full Stack" class="tag-component epcl-button">Full Stack</a>
+                    </div>
+                </div>
+            </div>
+</div>
+            </section>
+            <section id="services" class="section-services section grid-container">
+                <h4 class="heading-style-h6">Roles<br>&zwj;</h4>
+                <div class="w-layout-grid text-grid">
+                    <div class="max-width-small">
+                        <h2>Developer</h2>
+                        <div class="margin-vertical margin-small">
+                            <p>As an integral part of the System Administrator team, I worked as a Python
+                                Developer for over 4 years, gaining a deep understanding of core Python
+                                development. I have a thorough grasp of Object-Oriented Programming and Design
+                                Patterns, with a strong focus on scripting and developing web-based tools.</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="max-width-small">
+                        <h2>DevOps</h2>
+                        <div class="margin-vertical margin-small">
+                            <p>As a DevOps Engineer, I started with cultivating the DevOps culture when we moved
+                                from Monolith to Agile Implementation. Further automated the process end-to-end.
+                                Right from Building the code (CI) to deploying it to different enviornment (CD).
+                                Recently started creating Infrastructure with the help of code (IAC).</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="about" class="d-slide bg-black">
+                <div class="grid-container">
+                    <div class="padding-vertical padding-xhuge">
+                        <h3 class="heading-style-h6">about me<br>&zwj;</h3>
+                        <div class="w-layout-grid text-grid about">
+                            <h2>I’m Thai Tran.<br>
+                                Currently working as Python Developer or DevOps Engineer.</h2>
+                            <div class="trivia-wrapper">
+                                <p>5 years of experience working at a company in roles such as System Administrator,
+                                    Developer, and DevOps<br>&zwj;</p>
+                                <div class="text-size-medium text-weight-bold">Tools I am comfortable using</div>
+                                <p><strong>Programing Languages: </strong>Python, SQL<br><strong>Scripting
+                                        Languages</strong>: Shell Scripting (Bash), Python,
+                                    etc.<br><strong>Tools:</strong> Git, Github Action <br>Rest API</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="blog" class="sticky-container section np-bottom grid-container">
+                <h3 class="heading-style-h6">archive<br>&zwj;</h3>
+                <div class="center">
+    
+    <!-- start: .articles -->
+    <div class="articles grid-posts epcl-row" data-aos="fade-up">                
+            <article
+    class="default grid-33 tablet-grid-50 mobile-grid-100 np-mobile ctag-news post-access-public ">
+    <header>
+        <div class="post-format-image">
+            <div class="featured-image">
+                    <a href="/coming-soon/" class="thumb epcl-loader translate-effect grayscale-effect">
+                            <img loading="eager" src="https://static.ghost.org/v4.0.0/images/feature-image.jpg" alt="Image of: Coming soon" width="368" height="368">
+                        <span class="screen-reader-text">Coming soon</span>
+                    </a>
+            </div>
+            <div class="info">
+                <h2 class="main-title title underline-effect"><a href="/coming-soon/">Coming soon</a></h2>
+            </div>
+        </div>
+
+    </header>
+    
+    <div class="post-excerpt">
+        <!-- start: .meta -->
+        <div class="meta">
+            <time class="meta-info" datetime="2024-10-17">
+    October 17, 2024
+</time>            <div class="clear"></div>
+        </div>
+        <!-- end: .meta -->
+
+        <div class="clear"></div>
+    </div>
+
+</article>    </div>
+    <!-- end: .articles -->
+    
+    <nav class="epcl-pagination section np-bottom">
+	<div class="nav">
+		<span class="page-number hide-on-mobile">Page 1 of 1</span>
+	</div>
+</nav>
+
+</div>            </section>
+        </div>
+        <!-- end: .content-wrapper -->
+
+    </main>
+
+        <!-- start: #footer -->
+<footer id="footer">
+
+
+
+    <div class="bg-black">
+    <div class="grid-container section">
+        <h2>Got a project in mind?<br>Hit me up.</h2>
+        <div class="margin-vertical margin-small"><a href="mailto:thai.tr@hotmail.com"
+                class="mail-link">thai.tr@hotmail.com</a></div>
+        <div class="social-wrapper">
+            <div class="social-wrap-left epcl-social-buttons">
+                        <a href="https://www.linkedin.com/in/atomtr/" class="social-icon-wrap w-inline-block">
+            <svg width="2rem" height="2rem">
+                <use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#linkedin-icon"></use>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/rt.mota/" class="social-icon-wrap w-inline-block">
+            <svg width="2rem" height="2rem">
+                <use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#instagram-icon"></use>
+            </svg>
+        </a>
+
+
+            </div>
+            <div class="social-wrap-right">
+                <div class="text-size-small">@2024</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="clear"></div>
+
+    <span id="back-to-top" class="epcl-button">
+        <svg class="icon large" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 5l6 6m-6-6l-6 6m6-6v14"/>
+        </svg>
+    </span>
+
+</footer>
+<!-- end: #footer -->
+    </div>
+    <!-- end: #wrapper -->
+
+    
+
+    <script defer src="/assets/dist/scripts.min.js?v=e5d5ed9ead"></script>
+    <script>
+       
+        let lastScrollTop = 0;
+        let headerHeight = document.getElementById('header').offsetHeight;
+
+        document.getElementById('wrapper').addEventListener("scroll", function() {
+            const currentScroll = document.getElementById('wrapper').scrollTop;
+            console.log(lastScrollTop);
+            if (currentScroll >= lastScrollTop) {
+                // Scrolling down, hide the navbar
+                 document.getElementById("header").style.top = `-${headerHeight}px`; // Move navbar off the screen
+                 document.getElementById("header").style.position = "relative";
+            } else {
+                // Scrolling up, show the navbar
+                 document.getElementById("header").style.top = "0";
+                 document.getElementById("header").style.position = "fixed";
+            }
+            if (currentScroll <=0 ) {
+                document.getElementById("header").style.position = "relative";
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Avoid negative scroll values
+        });
+    </script>
+</body>
+</html>

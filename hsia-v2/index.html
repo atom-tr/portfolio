@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HSIA - v2</title>
+
+
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="shortcut icon" href="http://localhost:2368/content/images/size/w256h256/format/png/2024/10/favicon.webp">
+
+
+<link href="/assets/dist/style.min.css?v=e5d5ed9ead" type="text/css" rel="stylesheet">
+<link href="/assets/dist/plugins.min.css?v=e5d5ed9ead" type="text/css" rel="preload" as="style" onload="this.rel='stylesheet'">
+<link href="/assets/dist/atomtr.webflow.29fce4360.css?v=e5d5ed9ead" type="text/css" rel="stylesheet">
+
+
+<style>
+    /* merriweather-regular - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/assets/fonts/merriweather-v30-latin-regular.woff2?v=e5d5ed9ead) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* merriweather-italic - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Merriweather';
+        font-style: italic;
+        font-weight: 400;
+        src: url(/assets/fonts/merriweather-v30-latin-italic.woff2?v=e5d5ed9ead) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* merriweather-700 - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+        src: url(/assets/fonts/merriweather-v30-latin-700.woff2?v=e5d5ed9ead) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* merriweather-700italic - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Merriweather';
+        font-style: italic;
+        font-weight: 700;
+        src: url(/assets/fonts/merriweather-v30-latin-700italic.woff2?v=e5d5ed9ead) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* merriweather-900 - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 900;
+        src: url(/assets/fonts/merriweather-v30-latin-900.woff2?v=e5d5ed9ead) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+</style>
+
+
+<style>
+    :root{
+            --epcl-background-color: #FAF2EA;
+            --epcl-border-color: #524D4E;
+            --epcl-secondary-color: #FDFBF9;
+    }
+    body.disable-grayscale .grayscale-effect img{
+        -webkit-filter: none;
+        filter: none;
+    }
+</style>
+
+<script>
+	// Theme Config, check the documentation before edit this file
+    var site_url = 'http://localhost:2368';
+	var theme_config = {
+		masonry: 'on', // If you don't need masonry style, just set to "off"
+	};  
+</script>
+    <meta name="description" content="Upgraded code for the HSIA service software to integrate new systems and add new features.">
+    <link rel="icon" href="http://localhost:2368/content/images/size/w256h256/format/png/2024/10/favicon.webp" type="image/png">
+    <link rel="canonical" href="http://localhost:2368/hsia-v2/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="atomtr">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HSIA - v2">
+    <meta property="og:description" content="Upgraded code for the HSIA service software to integrate new systems and add new features.">
+    <meta property="og:url" content="http://localhost:2368/hsia-v2/">
+    <meta property="article:published_time" content="2024-10-17T08:30:01.000Z">
+    <meta property="article:modified_time" content="2024-10-17T08:30:01.000Z">
+    <meta property="article:tag" content="Project">
+    <meta property="article:tag" content="Full Stack">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="HSIA - v2">
+    <meta name="twitter:description" content="Upgraded code for the HSIA service software to integrate new systems and add new features.">
+    <meta name="twitter:url" content="http://localhost:2368/hsia-v2/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="atomtr">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Project, Full Stack">
+    <meta name="twitter:site" content="@ghost">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "atomtr",
+        "url": "http://localhost:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/size/w256h256/format/png/2024/10/favicon.webp",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "atomtr",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.gravatar.com/avatar/98ff770f469351212bbc3ff730837f9e?s=250&r=x&d=mp",
+            "width": 250,
+            "height": 250
+        },
+        "url": "http://localhost:2368/author/atomtr/",
+        "sameAs": []
+    },
+    "headline": "HSIA - v2",
+    "url": "http://localhost:2368/hsia-v2/",
+    "datePublished": "2024-10-17T08:30:01.000Z",
+    "dateModified": "2024-10-17T08:30:01.000Z",
+    "keywords": "Project, Full Stack",
+    "description": "Upgraded code for the HSIA service software to integrate new systems and add new features.",
+    "mainEntityOfPage": "http://localhost:2368/hsia-v2/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.96">
+    <link rel="alternate" type="application/rss+xml" title="atomtr" href="http://localhost:2368/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.3/umd/sodo-search.min.js" data-key="cdee128ec2a55885a064db409d" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.3/umd/main.css" data-sodo-search="http://localhost:2368/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="http://localhost:2368/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=e5d5ed9ead"></script><style>:root {--ghost-accent-color: #1c1a1a;}</style>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=e5d5ed9ead">
+
+</head>
+
+<body class=" page-template page-hsia-v2 tag-prj tag-full-stack" >
+
+    <div class="cursor-wrapper hide-tablet blend-mode-difference">
+        <div class="node" id="node"></div>
+        <div class="cursor" id="cursor"></div>
+    </div>
+
+    <img loading="eager" fetchpriority="high" src="/assets/images/svg-icons.svg?v=e5d5ed9ead" alt="Social Icons"
+        style="display:none;">
+
+    <!-- start: .mobile.main-nav -->
+    <nav class="mobile main-nav">
+        <div class="close"><svg class="icon">
+                <use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#close-icon"></use>
+            </svg></div>
+            <div class="logo text-logo">
+        <a href="http://localhost:2368" class="title bold black no-margin"><span>atomtr</span></a>
+    </div>
+            <ul class="menu underline-effect">
+            <li class=" nav-home"><a href="http://localhost:2368/">Home</a></li>
+            <li class=" nav-about"><a href="http://localhost:2368/about/">About</a></li>
+    </ul>
+
+
+    </nav>
+    <!-- end: .mobile.main-nav -->
+    <div class="menu-overlay"></div>
+
+    <!-- start: #wrapper -->
+    <div id="wrapper">
+
+        <!-- start: #header -->
+<header id="header" class="classic">
+
+	<div class="menu-mobile">
+        <svg class="icon ularge open"><use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#menu-icon"></use></svg>
+        <svg class="icon ularge close"><use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#close-icon"></use></svg>
+    </div>
+
+    <span data-ghost-search class="epcl-search-button hide-on-desktop-lg"><svg class="icon ularge"><use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#search-icon"></use></svg></span>
+
+	<!-- start: .menu-wrapper -->
+	<div class="menu-wrapper">
+
+        <div class="top underline-effect hide-on-mobile hide-on-tablet hide-on-desktop-sm">    
+            <div class="grid-container">
+                    <div class="stack-nav">  
+                            <div class="logo text-logo">
+        <a href="http://localhost:2368" class="title bold black no-margin"><span>atomtr</span></a>
+    </div>
+                            <ul class="menu underline-effect">
+            <li class=" nav-home"><a href="http://localhost:2368/">Home</a></li>
+            <li class=" nav-about"><a href="http://localhost:2368/about/">About</a></li>
+    </ul>
+
+  
+                    </div>
+                <div>
+                    <span data-ghost-search class="epcl-search-button"><svg class="icon large"><use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#search-icon"></use></svg></span>
+                </div>
+            </div>
+        </div>
+		
+	</div>
+	<!-- end: .menu-wrapper -->
+	
+	<div class="clear"></div>
+
+</header>
+<!-- end: #header -->
+        
+
+<!-- start: #page -->
+<main id="page" class="main grid-container">
+	
+    <!-- start: .center -->
+    <div id="single" class="content no-sidebar ">
+
+
+        <div class="content">
+        
+            <!-- start: .left-content -->
+            <div class="left-content np-mobile">
+                <article class="main-article post tag-prj tag-full-stack no-image">
+
+                    <header>
+                        <div class="info textcenter">    
+                            <h1 class="main-title title ularge">HSIA - v2</h1>   
+                        </div>            
+                        <div class="clear"></div>
+                    </header>
+                
+                    <section class="post-content">              
+                        <div class="text">
+                            
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+                    
+                </article>
+            </div>
+            <!-- end: .content -->
+            
+            <div class="clear"></div>
+
+        </div>
+    
+    </div>
+    <!-- end: .center -->
+    
+</main>
+<!-- end: #page -->
+
+
+
+        <!-- start: #footer -->
+<footer id="footer">
+
+
+
+    <div class="bg-black">
+    <div class="grid-container section">
+        <h2>Got a project in mind?<br>Hit me up.</h2>
+        <div class="margin-vertical margin-small"><a href="mailto:thai.tr@hotmail.com"
+                class="mail-link">thai.tr@hotmail.com</a></div>
+        <div class="social-wrapper">
+            <div class="social-wrap-left epcl-social-buttons">
+                        <a href="https://www.linkedin.com/in/atomtr/" class="social-icon-wrap w-inline-block">
+            <svg width="2rem" height="2rem">
+                <use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#linkedin-icon"></use>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/rt.mota/" class="social-icon-wrap w-inline-block">
+            <svg width="2rem" height="2rem">
+                <use xlink:href="/assets/images/svg-icons.svg?v=e5d5ed9ead#instagram-icon"></use>
+            </svg>
+        </a>
+
+
+            </div>
+            <div class="social-wrap-right">
+                <div class="text-size-small">@2024</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="clear"></div>
+
+    <span id="back-to-top" class="epcl-button">
+        <svg class="icon large" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 5l6 6m-6-6l-6 6m6-6v14"/>
+        </svg>
+    </span>
+
+</footer>
+<!-- end: #footer -->
+    </div>
+    <!-- end: #wrapper -->
+
+    
+
+    <script defer src="/assets/dist/scripts.min.js?v=e5d5ed9ead"></script>
+    <script>
+       
+        let lastScrollTop = 0;
+        let headerHeight = document.getElementById('header').offsetHeight;
+
+        document.getElementById('wrapper').addEventListener("scroll", function() {
+            const currentScroll = document.getElementById('wrapper').scrollTop;
+            console.log(lastScrollTop);
+            if (currentScroll >= lastScrollTop) {
+                // Scrolling down, hide the navbar
+                 document.getElementById("header").style.top = `-${headerHeight}px`; // Move navbar off the screen
+                 document.getElementById("header").style.position = "relative";
+            } else {
+                // Scrolling up, show the navbar
+                 document.getElementById("header").style.top = "0";
+                 document.getElementById("header").style.position = "fixed";
+            }
+            if (currentScroll <=0 ) {
+                document.getElementById("header").style.position = "relative";
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Avoid negative scroll values
+        });
+    </script>
+</body>
+</html>
