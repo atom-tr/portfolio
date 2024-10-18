@@ -1,0 +1,175 @@
+
+/* @group Global Articles List */
+
+/* Global Meta data */
+
+time:not(.icon){
+    position: relative;
+    &.small{
+        font-size: 12px;
+        line-height: 1;
+    }
+}
+
+.meta{
+    margin-left: -12px;
+    font-weight: 700;
+    font-size: 15px;
+    a{
+        color: $meta-color;
+        &:hover{ color: $main-color; }
+    }
+    &.small{
+        font-size: 13px;
+        font-weight: 400;
+        svg.icon{
+            width: 17px;
+            height: 17px;
+            vertical-align: middle;
+            margin-top: -3px;
+            margin-right: 3px;
+        }
+        .rating{
+            font-size: 18px;
+        }
+    }
+    .meta-info{
+        margin-left: 12px;
+        position: relative;
+        z-index: 2;
+    }
+    .author{
+        .author-image{
+            width: 22px;
+            height: 22px;
+            position: relative;
+            left: auto;
+            top: -1px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+            border-radius: 50%;
+            font-size: 16px;
+            border: 1px solid $border-color;
+            @include transition($transition-time-bezier, 'bezier');
+            &:before{
+                display: none;
+            }
+            &.small{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .author-name span{
+            color: $text-color;
+            font-weight: normal;
+        }
+    }
+}
+
+/* @end */
+
+// Articles loop
+div.articles{
+	article{
+        margin: 0 auto 40px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* @start Grid Articles */
+
+    &.grid-posts{
+        // display: flex;
+        // flex-flow: row wrap;
+        position: relative;
+        z-index: 2;
+        .epcl-bg{
+            padding: 20px 20px 25px;
+            margin: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        article{
+            padding: 0 20px;
+            margin-bottom: 40px;
+            // position: absolute;
+            &.no-image{
+
+            }
+            .featured-image{
+                margin-bottom: 15px;
+                a{
+                    border: 1px solid $border-color; 
+                }
+                img{
+                    display: block;                       
+                }
+            }
+            .info{
+                padding: 0 20px;
+            }
+            .main-title{
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+            .post-excerpt{
+                padding: 0 20px 20px;
+            }
+            .meta{
+                margin-top: 20px;
+            }
+        }
+    }
+
+    /* @end Grid Articles */
+    
+}
+
+/* @group Global Pagination */
+
+.epcl-pagination{
+    clear: both;
+    text-align: center;
+    padding: 30px 0 0;
+    div.nav{ 
+        display: inline-block;
+        > span{
+            display: inline-block;
+            margin: 0 10px;
+            height: 36px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 36px;
+            padding: 0 15px;
+        }
+        a{
+            
+            span{ padding: 0; margin: 0; }
+        }
+    }
+    
+}
+
+/* @end */
+
+/* project card */
+.card {
+    background-image: var(--page-feature-image);
+    background-position: 44px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 35rem;
+    padding: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}

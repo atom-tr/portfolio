@@ -1,0 +1,25 @@
+/* CSS Document */
+
+@media screen and (min-width: 1201px){
+    .hide-on-desktop-lg{ display: none !important; }
+}
+
+@media screen and (max-width: 1450px){
+    .grid-container{ max-width: 1200px; }
+}
+
+/* All Mobile Devices */
+
+@import "responsive/all-mobile";
+
+/* Small Desktop (up to 1200px) */
+
+@import "responsive/desktop-sm";
+
+/* Tablets (up to 1024px) */
+
+@import "responsive/tablet";
+
+/* SmartPhones and small tablets */
+
+@import "responsive/mobile";

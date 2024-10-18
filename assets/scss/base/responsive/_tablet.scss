@@ -1,0 +1,96 @@
+@media screen and (min-width: 768px) and (max-width: 990px){
+    $section-padding: 60px;
+    $medium-section-padding: 40px;
+    body{ font-size: 14px; }
+    div.left-content{ padding-right: 0px; padding-left: 0px; }
+    .classic-sidebar div.left-content{ padding-left: 20px; }
+	.grid-container{ padding-left: 40px; padding-right: 40px; }
+	.np-tablet{ padding-left: 0; padding-right: 0; }
+    .nofloat-tablet{ float: none !important; }
+    .no-sidebar:not(#single){ display: none !important; }
+    .section{
+        padding-top: $section-padding;
+        padding-bottom: $section-padding;
+    }
+    .medium-section{
+        padding-top: $medium-section-padding;
+        padding-bottom: $medium-section-padding;
+    }
+    .inputbox.large{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    aside{
+        .default-sidebar, .mobile-sidebar{
+            display: flex;
+            flex-flow: row wrap;
+        }
+    }
+    aside .widget{
+        width: 50%;
+        float: left;
+        border: 0;
+        padding: 0 30px;
+        flex-grow: 1;
+        box-sizing: border-box;
+        &.widget_search{
+            background: none;
+        }
+    }
+    #sidebar {      
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 0 !important;         
+        .sidebar-wrapper{
+            margin: 25px 0 0;
+        }
+    }
+
+    #header{
+        .logo{
+            a{
+                font-size: 42px;
+            }
+            .title{
+                font-size: 50px;
+            }
+        }
+    }
+    nav.mobile.main-nav{
+        padding-top: 80px;
+    }
+
+    /* @end */
+
+    #single .main-article{
+        padding: 0 30px;
+    }
+
+    /* @group Archives */
+
+    #archives .tag-description{
+        padding: 0 0 40px;
+        .bg-decoration{
+            width: 250px;
+            height: 200px;
+        }
+    }
+    #author{
+        padding: 0 40px 40px;
+        .author-avatar{
+            width: 175px;
+            height: 175px;
+        }
+    }
+    /* @end */
+
+    /* @group Single */
+
+    div.text{
+        font-size: 16px;
+    }
+
+    /* @end */
+
+}

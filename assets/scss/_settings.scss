@@ -1,0 +1,159 @@
+/*------------------------------------*\
+    			SETTINGS
+\*------------------------------------*/
+
+/* @group CSS2 Variables */
+
+:root{
+    /* Font Styles */
+    --epcl-font-family: "Merriweather", sans-serif;
+    --epcl-title-font-family: "Merriweather", sans-serif;
+    --epcl-font-size: 17px; /* General content font size */
+    --epcl-line-height: 1.8; /* General content line height */
+    --epcl-font-size-editor: 18px; /* Single Content font size */
+    --epcl-line-height-editor: 1.8; /* Single Content line height */
+    
+    /* Colors */
+    --epcl-main-color: var(--ghost-accent-color);
+    --epcl-secondary-color: #FDFBF9;
+    --epcl-titles-color: var(--ghost-accent-color);
+    --epcl-black: var(--ghost-accent-color);
+    --epcl-background-color: #FAF2EA;
+    --epcl-border-color: var(--ghost-accent-color); /* General border color */
+
+    --epcl-boxes-shadow: 0px 2px 5px 0px rgba(0,0,0, 0.03);
+    --epcl-small-shadow: 0px 3px 5px 0px rgba(0,0,0, 0.2); /* Used on small images (like widgets or related articles) */
+    --epcl-medium-shadow: 0px 8px 16px -4px rgba(0,0,0, 0.10);
+    --epcl-large-shadow: 0px 4px 25px -4px rgba(0,0,0, 0.20);
+    --epcl-transition-bezier: cubic-bezier(.5,2.5,.7,.7);
+
+    /* Coding */
+    --epcl-code-background: #211d3f; /* Used on "code" blocks not syntax highlighter */
+    --epcl-code-color: #b0b9c5; /* Used on code blocks not syntax highlighter */
+
+    /* Others */
+    --epcl-small-border-radius: 0px; /* Used on small elements (like buttons) */
+    --epcl-medium-border-radius: 0px; /* Used on medium elements (like boxes) */
+    --epcl-large-border-radius: 100px; /* Used to generate circles */
+}
+
+/* @end */
+
+/* @group Font Families */
+
+$font-family: var(--epcl-font-family);
+$font-weight: 400;
+$font-size: var(--epcl-font-size); // General content font size
+$line-height: var(--epcl-line-height);
+
+$font-size-editor: var(--epcl-font-size-editor); // Single Content font size
+$line-height-editor: var(--epcl-line-height-editor);
+$font-weight-editor: 400;
+
+$title-font-family: var(--epcl-title-font-family);
+$title-font-size: 30px;
+
+/* @end */
+
+$main-color: var(--epcl-main-color);
+$secondary-color: var(--epcl-secondary-color);
+$black: var(--epcl-black); 
+$titles-color: var(--epcl-titles-color);
+$yellow: #FFC225;
+
+// Content
+
+$background-color: var(--epcl-background-color); // Body background color
+$boxes-bg-color: var(--epcl-boxes-background-color);
+$boxes-border-color: var(--epcl-boxes-border-color);
+$text-color: var(--epcl-main-color); // Primary text color
+$meta-color: var(--epcl-meta-color);
+$white: #fffbf0;
+$light-gray: #555;
+$border-color: var(--epcl-border-color); 
+$input-bg-color: #fffbf0;
+
+// Coding
+$code-background: var(--epcl-code-background);
+$code-color: var(--epcl-code-color);
+
+// Others
+$small-border-radius: var(--epcl-small-border-radius);
+$medium-border-radius: var(--epcl-medium-border-radius);
+$large-border-radius: var(--epcl-large-border-radius);
+
+// Decorations
+
+$boxes-shadow: var(--epcl-boxes-shadow);
+$small-shadow: var(--epcl-small-shadow); // Used on small images (like widgets or related articles)
+$medium-shadow: var(--epcl-medium-shadow);
+$large-shadow: var(--epcl-large-shadow); // Used on Large Containers (boxes, single article, etc)
+
+// Social Colors
+// Note: network-bg-color will be used as background for social buttons, using a lighter color is recommended to prevent an opaque design.
+$social-lighten: 0%;
+
+$twitter-color: #222;
+$twitter-bg-color: lighten($twitter-color, $social-lighten);
+$instagram-color: #EF00A2;
+$instagram-bg-color: lighten($instagram-color, $social-lighten);
+$facebook-color: #175BEB;
+$facebook-bg-color: lighten($facebook-color, $social-lighten);
+$linkedin-color: #0077b5;
+$linkedin-bg-color: lighten($linkedin-color, $social-lighten);
+$pinterest-color: #EE3E52;
+$pinterest-bg-color: lighten($pinterest-color, $social-lighten);
+$dribbble-color: #D97AA6;
+$dribbble-bg-color: lighten($dribbble-color, $social-lighten);
+$tumblr-color: #5F7990;
+$tumblr-bg-color: lighten($tumblr-color, $social-lighten);
+$youtube-color: #fb5555;
+$youtube-bg-color: lighten($youtube-color, $social-lighten);
+$flickr-color: #EF3998;
+$flickr-bg-color: lighten($flickr-color, $social-lighten);
+$twitch-color: #8551e6;
+$twitch-bg-color: lighten($twitch-color, $social-lighten);
+$vk-color: #6299dc;
+$vk-bg-color: lighten($vk-color, $social-lighten);
+$telegram-color: #0088cc;
+$telegram-bg-color: lighten($telegram-color, $social-lighten);
+$rss-color: #f59f23;
+$rss-bg-color: lighten($rss-color, $social-lighten);
+$tiktok-color: #69c9d0;
+$tiktok-bg-color: lighten($tiktok-color, $social-lighten);
+$whatsapp-color: #1FB381;
+$whatsapp-bg-color: lighten($whatsapp-color, $social-lighten);
+
+$lighten: 9%; //Lighten amount for hovers and overlays, example: subscribe input box background
+$darken: 4%; //Darken amount for hovers and overlays, example: search box background
+
+/* @end */
+
+/* @group Effects speed */
+
+$transition-time: 300ms;
+$transition-method: ease; //General transition method
+$transition-time-bezier: 300ms;
+$transition-bezier: var(--epcl-transition-bezier); // Only for elemtents with shadow effect
+
+/* @end */
+
+/* @group Content Width and Margins */
+
+$editor-width: 780px;
+$editor-base-unit: 32px; // Space between paragraphs and titles (post content)
+$section-padding: 80px; // Padding top and bottom for containers, example: sidebar widgets, suscribe form
+$medium-section-padding: 60px;
+$element-padding: 25px;
+
+$grid-container: 1190px; // Max width for the theme
+$grid-usmall: 600px;
+$grid-small: 780px;
+$grid-medium: 990px;
+$grid-large: 1400px;
+$grid-ularge: 1600px;
+$grid-gap: 20px; // Space betweens grids elements
+
+/* @end */
+
+$assets_path: '..'; // Do not change

@@ -1,0 +1,39 @@
+/* @group Sidebar */
+
+div.left-content{
+    padding-right: 0;
+    padding-left: 50px;
+    .grid-sidebar &, .classic-sidebar &{
+        padding-right: 50px;
+    }
+    .grid-sidebar &{
+        padding-left: 0;
+        padding-right: 30px;
+    }
+    .no-sidebar &{
+        padding-right: $grid-gap;
+        max-width: 860px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+.no-active-sidebar div.left-content{ width: auto; float: none; }
+#sidebar{
+    z-index: 2;
+    // padding: 0;
+    padding-left: 0;
+    &.enable-sticky{
+        position: sticky;
+        top: 140px;
+    }
+	.widget{
+        position: relative;
+        margin-bottom: 40px;
+        width: auto;
+        float: none;
+        padding: 0;
+        // &:last-child{ margin-bottom: 0; }
+    }
+}
+
+/* @end */

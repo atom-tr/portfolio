@@ -1,0 +1,135 @@
+/* @group Single Post */
+
+.no-sidebar{
+	#sidebar{ display: none; }
+	div.left-content{
+		width: auto;
+		border: 0;
+        margin-right: 0;
+        float: none;
+        padding-left: 20px;
+	}
+}
+
+#single{
+    transform: none;
+    .main-article{
+        position: relative;
+        z-index: 1;
+        padding: 0 60px;
+        &.no-image{
+            padding-top: 0;
+        }
+        .featured-image-caption{
+            margin-top: 10px;
+            font-size: 13px;
+        }
+    }
+
+    .main-title{
+        margin-bottom: 20px;
+    }
+    .post-content{
+        margin-top: 40px;
+    }
+
+	// Classic style
+
+    &.classic{
+        .featured-image{
+            margin-top: 30px;
+            img{
+                border: 1px solid $border-color;
+            }
+        }
+        .post-content{
+            margin-top: 40px;
+        }
+    }
+
+    /* Bottom share buttons and permalink */
+
+    .share-buttons{
+        text-align: center;
+        padding: 30px 60px;
+        .title{
+            display: inline-block;
+            margin-right: 10px;
+        }
+        a{
+            color: $main-color;
+        }
+        .twitter svg{
+            width: 19px;
+            height: 19px;
+        }
+    }
+
+    /* Bottom tags */
+
+    .bottom-tags{
+        margin-top: $section-padding;
+        padding: 30px 0;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        font-size: 15px;
+        p{
+            display: inline;
+        }
+        .tags-list{
+            display: inline;
+            padding: 0 10px;
+        }
+        a{
+            display: inline;
+            color: $main-color;
+            &:hover{
+                color: $black;
+            }
+        }
+        .last-update{
+            margin-left: 30px;
+            text-transform: capitalize;
+        }
+    }
+
+    /* Siblings Posts */
+
+	section.siblings{
+        margin-top: $medium-section-padding;
+        align-items: stretch;
+		article{
+			position: relative;
+			z-index: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            color: $main-color;
+            flex-flow: row wrap; 
+            font-size: 14px;    
+            width: 47%;   
+            @include transition;
+            &.prev{
+                padding-left: 60px;
+            }
+            &.next{
+                text-align: right;
+                justify-content: right;
+                padding-right: 60px;
+            }
+		}
+        .separator{
+            width: 1px;
+            height: 50px;
+            background: $border-color;
+            margin: auto;
+        }
+    }
+
+    #comments{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+}
+
+/* @end */

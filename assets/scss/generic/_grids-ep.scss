@@ -1,0 +1,171 @@
+/* ================================================================== */
+/* This file has a mobile-to-tablet, and tablet-to-desktop breakpoint */
+/* ================================================================== */
+
+/*
+/* EstudioPatagon Note: All suffix and prefix classes has been removed from the original Unsemantic Framework.
+/* If you need the original files, that can be downloded here: https://unsemantic.com/
+*/
+
+$grid-container: 1200px !default;
+
+$grid-gap: 10px !default;
+
+$lang-forward: left !default;
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.grid-container:before,
+.clearfix:before,
+.grid-container:after,
+.clearfix:after {
+  content: ".";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.grid-container:after, .clearfix:after {
+  clear: both;
+}
+
+.grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $grid-container;
+    padding-left: $grid-gap;
+    padding-right: $grid-gap;
+}
+
+.grid-5, .mobile-grid-5, .tablet-grid-5, .grid-10, .mobile-grid-10, .tablet-grid-10, .grid-15, .mobile-grid-15, .tablet-grid-15, .grid-20, .mobile-grid-20, .tablet-grid-20, .grid-25, .mobile-grid-25, .tablet-grid-25, .grid-30, .mobile-grid-30, .tablet-grid-30, .grid-35, .mobile-grid-35, .tablet-grid-35, .grid-40, .mobile-grid-40, .tablet-grid-40, .grid-45, .mobile-grid-45, .tablet-grid-45, .grid-50, .mobile-grid-50, .tablet-grid-50, .grid-55, .mobile-grid-55, .tablet-grid-55, .grid-60, .mobile-grid-60, .tablet-grid-60, .grid-65, .mobile-grid-65, .tablet-grid-65, .grid-70, .mobile-grid-70, .tablet-grid-70, .grid-75, .mobile-grid-75, .tablet-grid-75, .grid-80, .mobile-grid-80, .tablet-grid-80, .grid-85, .mobile-grid-85, .tablet-grid-85, .grid-90, .mobile-grid-90, .tablet-grid-90, .grid-95, .mobile-grid-95, .tablet-grid-95, .grid-100, .mobile-grid-100, .tablet-grid-100, .grid-33, .mobile-grid-33, .tablet-grid-33, .grid-66, .mobile-grid-66, .tablet-grid-66 {
+    box-sizing: border-box;
+    padding-left: $grid-gap;
+    padding-right: $grid-gap;
+}
+
+.grid-parent {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+  
+    // For 5 through 95 percent.
+    @for $i from 1 through 19 {
+        $num: $i * 5;
+        $decimal: $num / 100;
+        $percent: $num * 1%;
+
+        .mobile-grid-#{$num} {
+            float: $lang-forward;
+            width: $percent;
+        }
+    }
+
+    @for $i from 1 through 2 {
+        $num: $i * 33;
+        $one-third: 1 / 3;
+        $decimal: $i * $one-third;
+        $percent: ($num + $decimal) * 1%;
+
+        // Percentage based widths.
+        .mobile-grid-#{$num} {
+            float: $lang-forward;
+            width: $percent;
+        }
+    }
+
+    .mobile-grid-100 {
+        clear: both;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .hide-on-tablet {
+        display: none !important;
+    }
+
+    // For 5 through 95 percent.
+    @for $i from 1 through 19 {
+        $num: $i * 5;
+        $decimal: $num / 100;
+        $percent: $num * 1%;
+
+        .tablet-grid-#{$num} {
+            float: $lang-forward;
+            width: $percent;
+        }
+    }
+
+    @for $i from 1 through 2 {
+        $num: $i * 33;
+        $one-third: 1 / 3;
+        $decimal: $i * $one-third;
+        $percent: ($num + $decimal) * 1%;
+
+        // Percentage based widths.
+        .tablet-grid-#{$num} {
+            float: $lang-forward;
+            width: $percent;
+        }
+
+    }
+
+    .tablet-grid-100 {
+        clear: both;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1024px) {
+
+    .hide-on-desktop {
+        display: none !important;
+    }
+
+    // For 5 through 95 percent.
+    @for $i from 1 through 19 {
+        $num: $i * 5;
+        $decimal: $num / 100;
+        $percent: $num * 1%;
+
+        .grid-#{$num} {
+            float: $lang-forward;
+            width: $percent;
+        }
+    }
+
+    @for $i from 1 through 2 {
+        $num: $i * 33;
+        $one-third: 1 / 3;
+        $decimal: $i * $one-third;
+        $percent: ($num + $decimal) * 1%;
+
+        // Percentage based widths.
+        .grid-#{$num} {
+            float: $lang-forward;
+            width: $percent;
+        }
+
+    }
+
+    .grid-100 {
+        clear: both;
+        width: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+@mixin button{
+    display: inline-block;
+	color: $white;
+	font-size: 17px;
+	padding: 5px 22px;
+    position: relative;
+    z-index: 2;
+    font-family: $font-family;
+    font-weight: 700;
+    border-radius: $small-border-radius;
+    background-color: $secondary-color;
+    color: $main-color;
+    border: 1px solid $border-color;
+    box-shadow: 3px 3px 0 -1px $border-color;
+    @include transition(300ms, 'bezier');
+	&:hover, &.active{
+        box-shadow: none;
+        transform: translate(1px, 0px);
+    }
+    &.large{ font-size: 20px; padding: 8px 40px; }
+}
+
+.button, .epcl-button:not(.epcl-shortcode){
+    @include button;
+}

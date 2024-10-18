@@ -1,0 +1,48 @@
+/* Small Desktops and Horizontal Tablets */
+
+@media screen and (min-width: 981px) and (max-width: 1200px){
+
+    .hide-on-desktop-sm{ display: none !important; }
+	body{ min-width: inherit; font-size: 14px; }
+	img{ max-width: 100%; height: auto; }
+    .grid-container{ padding-left: 30px; padding-right: 30px; }
+    .title{ font-size: 20px; }
+    div.left-content{
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    .content{
+        margin-top: 60px;
+    }
+    div.text{
+        font-size: 16px;
+    }
+
+    /* @group Header */
+
+    #header{
+        .logo{
+            .title{
+                font-size: 50px;
+            }
+        }
+    }
+
+    /* @end */
+
+
+    /* @group Archives */
+
+    #author{
+        .left{
+            margin-right: 30px;
+        }
+        .author-avatar{
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    /* @end */
+
+}
