@@ -1,5 +1,5 @@
 User-agent: *
-Sitemap: https://atomtr.linksitemap.xml
+Sitemap: https://atomtr.link/sitemap.xml
 Disallow: /ghost/
 Disallow: /email/
 Disallow: /members/api/comments/counts/
