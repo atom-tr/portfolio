@@ -156,9 +156,9 @@ div.articles{
 /* project card */
 .card {
     background-image: var(--page-feature-image);
-    background-position: 44px 0;
+    background-position: right -2rem bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -166,8 +166,10 @@ div.articles{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    min-height: 35rem;
-    padding: 3.5rem;
+    @media (orientation: landscape) {
+        aspect-ratio: 16 / 9;
+    }
+    padding: 2.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -16,8 +16,10 @@
 	&:hover, &.active{
         box-shadow: none;
         transform: translate(1px, 0px);
+        color: $main-color;
     }
     &.large{ font-size: 20px; padding: 8px 40px; }
+    &.small { font-size: 14px; padding: 3px 18px; }
 }
 
 .button, .epcl-button:not(.epcl-shortcode){

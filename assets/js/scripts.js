@@ -22,4 +22,9 @@
         hide_timing : 2000, 
     });
 
+    // Make all buttons with data-href clickable
+    $(document).on('click', '[data-href]', function() {
+        $(this).css('cursor', 'pointer');
+        window.location = $(this).data("href");
+    });
 })(jQuery);
